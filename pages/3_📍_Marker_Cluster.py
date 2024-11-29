@@ -18,9 +18,9 @@ st.title("Marker Cluster")
 with st.expander("See source code"):
     with st.echo():
 
-        m = leafmap.Map(center=[40, -101], zoom=8)
-        cities = 'https://github.com/opengeos/datasets/releases/download/us/cities.csv'
-        regions = 'https://github.com/opengeos/datasets/releases/download/us/us_regions.geojson'
+        m = leafmap.Map(center=[22.43, 120.54], zoom=14)
+        cities = 'https://github.com/Magi0902/solarpanels_1129/blob/main/solar_panels_edit.csv'
+        regions = 'https://github.com/Magi0902/solarpanels_1129/blob/main/PT_towns.geojson'
 #https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_cities.csv
 #https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_regions.geojson
         m.add_geojson(regions, layer_name='US Regions')
@@ -29,7 +29,7 @@ with st.expander("See source code"):
             x="longitude",
             y="latitude",
             color_column='region',
-            icon_names=["gear", "map", "leaf", "globe"],
+            icon_names=["year", "town", "location", "l_number", "x", "y", "company"],
             spin=True,
             add_legend=True,
         )
