@@ -19,9 +19,10 @@ with st.expander("See source code"):
     with st.echo():
 
         m = leafmap.Map(center=[40, -100], zoom=4)
-        cities = 'https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_cities.csv'
-        regions = 'https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_regions.geojson'
-
+        cities = 'https://github.com/Magi0902/Solarpanels.csv/blob/main/%E4%BD%B3%E5%86%AC%E5%85%89%E9%9B%BB%E6%9D%BF.csv'
+        regions = 'https://github.com/Magi0902/Solarpanels.csv/blob/main/PT_towns.geojson'
+#https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_cities.csv
+#https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_regions.geojson
         m.add_geojson(regions, layer_name='US Regions')
         m.add_points_from_xy(
             cities,
