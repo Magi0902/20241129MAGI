@@ -18,7 +18,7 @@ st.title("Marker Cluster")
 with st.expander("See source code"):
     with st.echo():
 
-        m = leafmap.Map(center=[40, -100], zoom=4)
+        m = leafmap.Map(center=[40, -101], zoom=8)
         cities = 'https://github.com/opengeos/datasets/releases/download/us/cities.csv'
         regions = 'https://github.com/opengeos/datasets/releases/download/us/us_regions.geojson'
 #https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_cities.csv
