@@ -19,9 +19,9 @@ with st.expander("See source code"):
     with st.echo():
         m = leafmap.Map(center=(22.439, 120.538), zoom=14, height="600px") 
         m.split_map(
-            left_layer="HYBRID", right_layer="https://github.com/godspeedhuang/Landuse_GeoJSON_Web/blob/master/preprocess/taiwan_administrative_divisions.csv"
+            left_layer="HYBRID", right_layer="ESA WorldCover 2020"
         )
-       # m.add_legend(title="ESA Land Cover", builtin_legend="ESA_WorldCover")
+        m.add_legend(title="ESA Land Cover", builtin_legend="ESA_WorldCover")
 #WORLDCOVER_2020_S2_FCC
 #ESA WorldCover 2020
 #https://github.com/Magi0902/solarpanels_1129/blob/main/solar_panels_edit.csv
