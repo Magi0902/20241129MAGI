@@ -23,7 +23,7 @@ with st.expander("See source code"):
         regions = 'https://github.com/Magi0902/Solarpanels.csv/blob/main/PT_towns.geojson'
 #https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_cities.csv
 #https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_regions.geojson
-        m.add_geojson(regions, layer_name='US Regions')
+        m.add_geojson(regions, layer_name='PT towns')
         m.add_points_from_xy(
             cities,
             x="longitude",
