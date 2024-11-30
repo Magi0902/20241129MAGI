@@ -19,7 +19,7 @@ with st.expander("See source code"):
     with st.echo():
         m = leafmap.Map(center=(22.439, 120.538), zoom=14, height="600px") 
         m.split_map(
-            left_layer="HYBRID", right_layer="https://github.com/Magi0902/Solarpanels.csv/blob/main/Solarpanels_Chiatung.csv"
+            left_layer="HYBRID", right_layer="https://github.com/godspeedhuang/Landuse_GeoJSON_Web/blob/master/preprocess/county_district/PIF.json"
         )
        # m.add_legend(title="ESA Land Cover", builtin_legend="ESA_WorldCover")
 #WORLDCOVER_2020_S2_FCC
