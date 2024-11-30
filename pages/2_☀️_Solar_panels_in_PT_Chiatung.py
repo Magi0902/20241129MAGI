@@ -29,7 +29,4 @@ with st.expander("See source code"):
 #https://github.com/Magi0902/Solarpanels.csv/blob/main/Solarpanels_Chiatung.csv
 m.to_streamlit(height=700)
 
- m = leafmap.Map(locate_control=True, latlon_control=True, draw_export=True, minimap_control=True)
-    m.add_basemap(basemap)
-    m.to_streamlit(height=700)
 
