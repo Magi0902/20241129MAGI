@@ -18,13 +18,13 @@ st.title("Heatmap")
 
 with st.expander("See source code"):
     with st.echo():
-        filepath = "https://github.com/Magi0902/Solarpanels.csv/blob/main/%E4%BD%B3%E5%86%AC%E5%85%89%E9%9B%BB%E6%9D%BF.csv"
-        m = leafmap.Map(center=[40, -100], zoom=4)
+        filepath = "https://chinchillaz.github.io/streamlit-hw/solar_panels_edit.csv"
+        m = leafmap.Map(center=[22, 120], zoom=14)
         m.add_heatmap(
             filepath,
             latitude="latitude",
             longitude="longitude",
-            value="pop_max",
+            value="id",
             name="Heat map",
             radius=20,
         )
