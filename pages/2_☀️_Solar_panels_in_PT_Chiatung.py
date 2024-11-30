@@ -21,7 +21,7 @@ with st.expander("See source code"):
         m.split_map(
             left_layer="HYBRID", right_layer="ESA WorldCover 2020"
         )
-        m.add_legend(title="ESA Land Cover", builtin_legend="ESA_WorldCover")
+        m.add_legend(title="ESA Land Cover", builtin_legend="https://chinchillaz.github.io/streamlit-hw/solar_panels_edit.csv")
 #WORLDCOVER_2020_S2_FCC
 #ESA WorldCover 2020
 #https://github.com/Magi0902/solarpanels_1129/blob/main/solar_panels_edit.csv
