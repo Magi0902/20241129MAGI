@@ -32,6 +32,6 @@ with st.expander("See source code"):
             icon_names=["year", "town", "location", "l_number", "x", "y", "company"],
             spin=True,
             add_legend=True,
-        )
+        ) 
         
 m.to_streamlit(height=700)
