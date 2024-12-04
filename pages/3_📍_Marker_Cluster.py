@@ -21,8 +21,6 @@ with st.expander("See source code"):
         m = leafmap.Map(center=[22.43, 120.54], zoom=14)
         cities = 'https://chinchillaz.github.io/streamlit-hw/4towns_solarpanels.geojson'
         regions = 'https://github.com/Magi0902/Solarpanels.csv/blob/main/4towns_solarpanels.geojson'
-#https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_cities.csv
-#https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_regions.geojson
         m.add_geojson(regions, layer_name='PT towns')
         m.add_points_from_xy(
             cities,
